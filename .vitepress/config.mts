@@ -4,6 +4,24 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Elin's Blog",
   description: "To record and Share my ideas.",
+  lastUpdated: true,
+  sitemap: {
+    hostname: "https://violinmeng.github.io"
+  },
+  head: [
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=GTM-KDFF455F' }
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GTM-KDFF455F');`
+    ]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
