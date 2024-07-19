@@ -5,6 +5,7 @@ export default defineConfig({
   title: "Elin's Blog",
   description: "To record and share my ideas.",
   lastUpdated: true,
+  ignoreDeadLinks: true,
   sitemap: {
     hostname: "https://violinmeng.github.io"
   },
