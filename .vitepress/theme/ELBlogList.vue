@@ -93,7 +93,7 @@ const grid = computed(() => {
 
 .item {
   padding: 8px;
-  width: 80%;
+  width: 100%;
 }
 
 /* @media (min-width: 640px) {

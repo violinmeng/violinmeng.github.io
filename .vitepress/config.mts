@@ -3,12 +3,13 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Elin's Blog",
-  description: "To record and Share my ideas.",
+  description: "To record and share my ideas.",
   lastUpdated: true,
   sitemap: {
     hostname: "https://violinmeng.github.io"
   },
   head: [
+    ['link', { rel: 'icon', href: '/.vitepress/favorite.ico' }],
     [
       'script',
       { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=GTM-KDFF455F' }
