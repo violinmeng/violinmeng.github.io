@@ -10,7 +10,7 @@ export default defineConfig({
     hostname: "https://violinmeng.github.io"
   },
   head: [
-    ['link', { rel: 'icon', href: '/.vitepress/favorite.ico' }],
+    ['link', { rel: 'icon', href: '/favorite.ico' }],
     [
       'script',
       { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=GTM-KDFF455F' }
@@ -25,6 +25,7 @@ export default defineConfig({
     ]
   ],
   themeConfig: {
+    logo: { src: '/favorite.ico', width: 24, height: 24 },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Blog', link: '/' },
